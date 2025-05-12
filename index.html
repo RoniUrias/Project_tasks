@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Protask</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tela de Login -->
+  <div class="container" id="login-container">
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button class="btn" onclick="fazerLogin()">Entrar</button>
+    <button class="btn" onclick="mostrarCadastro()">Cadastrar</button>
+    <p style="margin-top: 10px;">
+      <a href="#" onclick="esqueciSenha()" style="color:#66aaff; text-decoration: underline;">Esqueci minha senha</a>
+    </p>
+  </div>
+
+  <!-- Tela de Cadastro -->
+  <div class="container hidden" id="cadastro-container">
+    <h2>Novo Cadastro</h2>
+    <input type="text" id="novo-usuario" placeholder="Novo usuário">
+    <input type="password" id="nova-senha" placeholder="Nova senha">
+    <input type="email" id="novo-email" placeholder="Email">
+    <button class="btn" onclick="cadastrarUsuario()">Salvar</button>
+    <button class="btn" onclick="voltarLogin()">Voltar</button>
+  </div>
+
+  <!---- Plataforma de Tarefas -->
+  <div class="container hidden" id="plataforma">
+    <h2>Meus Projetos</h2>
+    <select id="projetos">
+      <option value="">-- Nenhum projeto cadastrado --</option>
+    </select>
+    <button class="btn" onclick="mostrarFormularioCadastroProjeto()">Cadastrar Novo Projeto</button>
+
+    <div id="formulario-cadastro-projeto" class="hidden">
+      <input type="text" id="novo-projeto" placeholder="Nome do Novo Projeto">
+      <button class="btn" onclick="cadastrarProjeto()">Salvar Projeto</button>
+      <button class="btn" onclick="cancelarCadastroProjeto()">Cancelar</button>
+    </div>
+
+    <div id="lista-projetos" class="hidden">
+      <h2>Projetos cadastrados</h2>
+      <div id="lista-projetos-conteudo"></div>
+    </div>
+
+    <div id="calendario-area" class="hidden">
+      <h2>Escolha uma data</h2>
+      <input type="date" id="data-tarefa">
+    </div>
+
+    <div id="tarefas-area" class="hidden">
+      <h2>Tarefas do dia</h2>
+      <div id="lista-tarefas"></div>
+      <input type="text" id="nova-tarefa" placeholder="Descreva a nova tarefa...">
+      <label for="prioridade-tarefa">Escolha a cor da prioridade</label>
+      <input type="color" id="prioridade-tarefa" value="#ff0000">
+      <button class="btn" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    </div>
+  </div>
+
+  <div class="rodape">
+    <footer>
+      <p>&copy; 2025 Goncatech. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

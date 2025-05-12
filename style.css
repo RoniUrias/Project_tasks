@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #1e2a3a;
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background: #2e3e50;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #66aaff;
+    text-align: center;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #1c2838;
+    color: #fff;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: #0059b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #004080;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .task {
+    background-color: #1f2d3d;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+    border-left: 6px solid #ff4444;
+  }
+  
+  .task.done {
+    opacity: 0.6;
+  }
+  
+  .task.done span {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .task-actions button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease;
+  }
+  
+  .task-actions .btn-editar {
+    background-color: #ffaa00;
+    color: white;
+  }
+  
+  .task-actions .btn-editar:hover {
+    background-color: #cc8800;
+  }
+  
+  .task-actions .btn-excluir {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .task-actions .btn-excluir:hover {
+    background-color: #c0392b;
+  }
+  
+  .projeto-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c2838;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-excluir-projeto {
+    background-color: #c0392b;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-excluir-projeto:hover {
+    background-color: #a5281d;
+  }
+  
+  footer {
+    background-color: #1f2d3d;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer a {
+    color: #66aaff;
+    text-decoration: none;
+  }
+  
+  .rodape {
+    background-color: #1e2a3a;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
